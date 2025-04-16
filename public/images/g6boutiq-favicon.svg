@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <style>
+        .text { font-family: Arial, sans-serif; font-weight: bold; }
+        .primary { fill: #1E40AF; }
+    </style>
+    <rect width="32" height="32" rx="6" fill="#F8FAFC"/>
+    <text x="4" y="24" class="text primary" font-size="20">G6</text>
+</svg> 

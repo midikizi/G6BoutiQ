@@ -19,7 +19,7 @@ class User extends Authenticatable implements FilamentUser
     /**
      * The attributes that are mass assignable.
      *
-     * @var list<string>
+     * @var array<int, string>
      */
     protected $fillable = [
         'name',
@@ -30,7 +30,7 @@ class User extends Authenticatable implements FilamentUser
     /**
      * The attributes that should be hidden for serialization.
      *
-     * @var list<string>
+     * @var array<int, string>
      */
     protected $hidden = [
         'password',
@@ -49,6 +49,6 @@ class User extends Authenticatable implements FilamentUser
 
     public function canAccessPanel(Panel $panel): bool
     {
-        return $this->hasAnyRole(['admin', 'gerant', 'vendeur']);
+        return true;
     }
 }

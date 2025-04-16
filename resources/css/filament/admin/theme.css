@@ -1,0 +1,76 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+/* Animations pour les cartes et boutons */
+.fi-btn {
+    transition: all 0.3s ease;
+}
+
+.fi-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* Animation pour le sidebar */
+.fi-sidebar {
+    transition: width 0.3s ease;
+}
+
+/* Animation pour les cartes */
+.fi-wi {
+    transition: all 0.3s ease;
+}
+
+.fi-wi:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* Style personnalisé pour le logo */
+.fi-logo {
+    transition: transform 0.3s ease;
+}
+
+.fi-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Animations pour les tableaux */
+.fi-ta-row {
+    transition: background-color 0.2s ease;
+}
+
+.fi-ta-row:hover {
+    background-color: rgb(var(--primary-50));
+}
+
+/* Style pour les en-têtes de section */
+.fi-section-header {
+    border-left: 4px solid rgb(var(--primary-600));
+    padding-left: 1rem;
+    margin: 2rem 0;
+}
+
+/* Animation pour les notifications */
+.fi-notification {
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Style pour les badges */
+.fi-badge {
+    transition: all 0.2s ease;
+}
+
+.fi-badge:hover {
+    transform: scale(1.1);
+} 
